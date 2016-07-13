@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yelpbalsa</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <%= render 'layouts/navbar' %>
+    <div class="container">
+      <%= yield %>
+      <!-- Footer -->
+      <%= render 'layouts/footer' %>
+    </div><!--/.container-->
+  </body>
+</html>
